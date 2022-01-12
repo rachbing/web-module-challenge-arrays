@@ -131,10 +131,13 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 // 2 param array, index
-function getFlavorByIndex(/*your code here*/){
+function getFlavorByIndex(array, number){
+  return array[number]
+}
+console.log(getFlavorByIndex(originalFlavors, 2))
   /*your code here*/
   // passed in originalFlavors and 2 i would want to return originalFlavors[2];
-}
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -153,11 +156,21 @@ Use the removeFlavorByName function below to do the following:
 */
 
 // 2 params array, index
-function removeFlavorByName(/*your code here*/){
+
+function removeFlavorByName(array, flavor) {
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] === flavor) {
+      array.splice(i, 1)
+    }
+  }
+  return array;
+}
+
+console.log('task 6:', removeFlavorByName(originalFlavors, 'Rocky Road'))
   /*your code here*/
   // loop thru array
   // write conditional
-}
+
 
 
 
@@ -183,12 +196,22 @@ Use the filterByWord function below to do the following:
 
 // 2 parameters array, string
 // use includes (is case sensitive)
-function filterByWord(/*your code here*/){
+function filterByWord(array, flavor) {
+  let filteredArray = [];
+  for(let i = 0; i < array.length; i++) {
+    if(array[i].includes(flavor)) {
+      filteredArray.push(array[i])
+    }
+  }
+  return filteredArray
+}
+console.log('task7:', filterByWord(originalFlavors, 'Chocolate'))
   /*your code here*/
   //create new array called filteredarray to push my values to
+
   //loop thru og array and check each item
   //if item includes string i want to push it to filtered array
-}
+
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
