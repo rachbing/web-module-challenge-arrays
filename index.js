@@ -68,7 +68,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 // check to see that length of array is equal to 31. if it is we return true, if not return false
 // conditional here if length array === 31
 function is31Flavors(array) {
-  
+  if(array.length === 31) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -84,11 +88,13 @@ Use the addFlavor function below to do the following:
 */
 
 // 2 params array, flavor
-function addFlavor(/*your code here*/){
- /*your code here*/
+function addFlavor(array, string) {
+  array.unshift(string)
+  return array
+}
  // use unshift to add the flavor to front of array
  // return array
-}
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -103,9 +109,11 @@ Use the removeLastFlavor function below to do the following:
 */
 
 // 1 param array
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(array) {
+  array.pop()
+  return array
 }
+
 // use pop
 //return the array
 
