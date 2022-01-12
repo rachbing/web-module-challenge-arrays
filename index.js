@@ -45,9 +45,11 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-  /*your code here*/
-}    
+// array as a parameter
+function copy(array) {
+  return [...array];
+}
+console.log('task 1', copy(originalFlavors));
 
 
 
@@ -63,9 +65,10 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
-
-function is31Flavors(/*your code here*/){
- /*your code here*/
+// check to see that length of array is equal to 31. if it is we return true, if not return false
+// conditional here if length array === 31
+function is31Flavors(array) {
+  
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -80,9 +83,11 @@ Use the addFlavor function below to do the following:
   For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
 
-
+// 2 params array, flavor
 function addFlavor(/*your code here*/){
  /*your code here*/
+ // use unshift to add the flavor to front of array
+ // return array
 }
 
 
@@ -97,9 +102,12 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
+// 1 param array
 function removeLastFlavor(/*your code here*/){
  /*your code here*/
 }
+// use pop
+//return the array
 
 
 
@@ -114,8 +122,10 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
+// 2 param array, index
 function getFlavorByIndex(/*your code here*/){
   /*your code here*/
+  // passed in originalFlavors and 2 i would want to return originalFlavors[2];
 }
 
 
@@ -134,8 +144,11 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
+// 2 params array, index
 function removeFlavorByName(/*your code here*/){
   /*your code here*/
+  // loop thru array
+  // write conditional
 }
 
 
@@ -160,8 +173,13 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
+// 2 parameters array, string
+// use includes (is case sensitive)
 function filterByWord(/*your code here*/){
   /*your code here*/
+  //create new array called filteredarray to push my values to
+  //loop thru og array and check each item
+  //if item includes string i want to push it to filtered array
 }
 
 
